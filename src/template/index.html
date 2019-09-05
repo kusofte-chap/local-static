@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            display: block;
+            font-size: 16px;
+            padding: 8px 24px;
+        }
+    </style>
+</head>
+<body>
+    {{#each files}}
+        <a href="{{../dir}}/{{this}}">{{this}}</a>
+    {{/each}}
+</body>
+</html>
